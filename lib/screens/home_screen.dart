@@ -5,6 +5,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Container(
+          color: Colors.red,
+          child: Column(
+            children: [Container(child: Image.asset('/assets/study1.jpg'))],
+          )),
+    );
   }
 }
