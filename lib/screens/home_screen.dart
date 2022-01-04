@@ -8,7 +8,14 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Image.asset('/assets/study1.jpg'),
+          Image.asset('assets/study1.jpg'),
+          const SizedBox(
+            height: 10,
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.change_circle),
+          )
         ],
       ),
     );
