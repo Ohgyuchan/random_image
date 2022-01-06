@@ -9,20 +9,26 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Get.put(CyclingController());
     return Scaffold(
-      body: Column(
-        children: [
-          Image.asset(controller.images[controller.arg.value]),
-          const SizedBox(
-            height: 10,
-          ),
-          IconButton(
-            onPressed: () {
-              controller.cycle();
-            },
-            icon: const Icon(Icons.change_circle),
-          )
-        ],
-      ),
+      body: Obx(() => Column(
+            children: [
+              Center(
+                child: Image.asset(
+                  controller.images[controller.arg.value - 1],
+                  height: 150,
+                  fit: BoxFit.fill,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              IconButton(
+                onPressed: () {
+                  controller.cycle();
+                },
+                icon: const Icon(Icons.change_circle),
+              )
+            ],
+          )),
     );
   }
 }
