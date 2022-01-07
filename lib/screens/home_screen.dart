@@ -10,10 +10,11 @@ class HomeScreen extends StatelessWidget {
     final controller = Get.put(CyclingController());
     return Scaffold(
       body: Obx(() => Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Center(
                 child: Image.asset(
-                  controller.images[controller.arg.value - 1],
+                  controller.images[controller.arg.value],
                   height: 150,
                   fit: BoxFit.fill,
                 ),

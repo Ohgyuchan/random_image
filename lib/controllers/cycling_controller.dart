@@ -16,7 +16,8 @@ class CyclingController extends GetxController {
   }
 
   void cycle() {
-    arg.value = arg.value % 3 + 1;
+    arg.value++;
+    arg.value = arg.value % 3;
     print(arg.value);
     update();
   }
