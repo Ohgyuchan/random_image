@@ -7,14 +7,14 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(CyclingController());
+    final cyclingController = Get.put(CyclingController());
     return Scaffold(
       body: Obx(() => Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Center(
                 child: Image.asset(
-                  controller.images[controller.arg.value],
+                  cyclingController.images[cyclingController.arg.value],
                   height: 150,
                   fit: BoxFit.fill,
                 ),
@@ -22,11 +22,20 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              IconButton(
-                onPressed: () {
-                  controller.cycle();
-                },
-                icon: const Icon(Icons.change_circle),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      cyclingController.cycle();
+                    },
+                    icon: const Icon(Icons.change_circle),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.add_a_photo),
+                  ),
+                ],
               )
             ],
           )),
