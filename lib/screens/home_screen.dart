@@ -22,21 +22,13 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  IconButton(
-                    onPressed: () {
-                      cyclingController.cycle();
-                    },
-                    icon: const Icon(Icons.change_circle),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.add_a_photo),
-                  ),
-                ],
-              )
+              TextButton(
+                  onPressed: () {
+                    cyclingController.cycle();
+                  },
+                  child: Text('새로고침')),
+              TextButton(onPressed: () {}, child: Text('기본 이미지에서 고르기')),
+              TextButton(onPressed: () {}, child: Text('내 갤러리에서 고르기')),
             ],
           )),
     );
