@@ -13,13 +13,13 @@ class CyclingController extends GetxController {
   @override
   void onInit() {
     arg.value = Random().nextInt(3);
+    isPick.value = false;
     super.onInit();
   }
 
   void cycle() {
     arg.value++;
     arg.value = arg.value % 3;
-    print(arg.value);
     update();
   }
 

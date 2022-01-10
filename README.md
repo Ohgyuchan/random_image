@@ -1,16 +1,13 @@
 # ramdom_image
 
-A new Flutter project.
+## 새로고침
+<img src='assets/readme/1.png' height='300'><img src='assets/readme/2.png' height='300'>
 
-## Getting Started
+## 기본 이미지 불러오기
+<img src='assets/readme/3.png' height='300'>
 
-This project is a starting point for a Flutter application.
+## 갤러리에서 불러오기
+<img src='assets/readme/4.png' height='300'><img src='assets/readme/5.png' height='300'>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 갤러리 이미지 초기화
+<img src='assets/readme/6.png' height='300'>
