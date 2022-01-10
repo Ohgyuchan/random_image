@@ -1,4 +1,6 @@
 # ramdom_image
+앱 내에 있는 이미지를 랜덤하게 불러오고 새로고침 시 새로운 이미지가 나온다.  
+갤러리에 있는 이미지를 불러왔을 때에도 초기화 버튼으로 초기화.
 
 ## 새로고침
 <img src='assets/readme/1.png' height='300'><img src='assets/readme/2.png' height='300'>
