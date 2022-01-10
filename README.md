@@ -8,7 +8,7 @@
 ## 기본 이미지 불러오기
 <img src='assets/readme/3.png' height='300'>
 
-## 갤러리에서 불러오기 (갤러리에서 불러올 시 `갤러리에서 불러오기` 버튼이 `이미지 초기화` 버튼으로 바뀜
+## 갤러리에서 불러오기 (갤러리에서 불러올 시 `내 갤러리에서 고르기` 버튼이 `이미지 초기화` 버튼으로 바뀜
 <img src='assets/readme/4.png' height='300'><img src='assets/readme/5.png' height='300'>
 
 ## 갤러리 이미지 초기화
