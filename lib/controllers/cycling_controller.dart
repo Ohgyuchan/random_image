@@ -8,6 +8,7 @@ class CyclingController extends GetxController {
     'assets/study3.jpg'
   ];
   RxInt arg = 0.obs;
+  RxBool isPick = false.obs;
 
   @override
   void onInit() {
@@ -19,6 +20,11 @@ class CyclingController extends GetxController {
     arg.value++;
     arg.value = arg.value % 3;
     print(arg.value);
+    update();
+  }
+
+  pick() {
+    isPick.value = true;
     update();
   }
 }

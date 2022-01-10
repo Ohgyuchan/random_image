@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Center(
-                child: pickedFile == null
+                child: cyclingController.isPick.value
                     ? Image.asset(
                         cyclingController.images[cyclingController.arg.value],
                         height: 150,
@@ -46,6 +46,10 @@ class HomeScreen extends StatelessWidget {
                     pickedFile = await _picker.pickImage(
                       source: ImageSource.gallery,
                     );
+
+                    if (pickedFile != null) {
+                      cyclingController.pick();
+                    }
                   },
                   child: Text('내 갤러리에서 고르기')),
             ],
