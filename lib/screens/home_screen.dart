@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ramdom_image/controllers/cycling_controller.dart';
+import 'package:ramdom_image/screens/default_pick_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -27,7 +28,11 @@ class HomeScreen extends StatelessWidget {
                     cyclingController.cycle();
                   },
                   child: Text('새로고침')),
-              TextButton(onPressed: () {}, child: Text('기본 이미지에서 고르기')),
+              TextButton(
+                  onPressed: () {
+                    Get.to(DefaultPickScreen());
+                  },
+                  child: Text('기본 이미지에서 고르기')),
               TextButton(onPressed: () {}, child: Text('내 갤러리에서 고르기')),
             ],
           )),
